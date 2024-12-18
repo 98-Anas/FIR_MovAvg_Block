@@ -106,6 +106,21 @@ The `DFF` module is a simple D Flip-Flop with asynchronous reset.
 - If `reset` is asserted, `data_delayed` is set to `0`.
 
 ---
+The moving average of streaming data is computed with a finite sliding window:
+
+\[
+mov_{Avg} = \frac{x[n] + x[n-1] + \dots + x[n-N]}{N+1}
+\]
+
+Where \( N+1 \) is the length of the filter. 
+
+This algorithm is a special case of the regular FIR filter with the coefficients vector, \([b_0, b_1, \dots, b_N]\):
+
+\[
+FIR_{Output} = b_0x[n] + b_1x[n-1] + \dots + b_Nx[n-N]
+\]
+
+---
 
 ## Code
 
