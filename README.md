@@ -55,11 +55,6 @@ Where:
 - **b0**, **b1**, **b2**, **b3**: Coefficients (weights) applied to each input sample.
 
 
-
-Where:
-- `data_in` is the current input sample.
-- `x1`, `x2`, and `x3` are delayed input samples (generated using DFFs).
-
 ---
 
 ## Modules
