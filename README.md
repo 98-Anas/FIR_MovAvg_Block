@@ -45,8 +45,9 @@ The FIR filter uses four coefficients, each equal to `0.25` (scaled by 128 to av
 The output of the filter is computed as:
 
 \[
-data\_out = (data\_in \times b0) + (x1 \times b1) + (x2 \times b2) + (x3 \times b3)
+\text{data\_out} = (\text{data\_in} \times b_0) + (x_1 \times b_1) + (x_2 \times b_2) + (x_3 \times b_3)
 \]
+
 
 Where:
 - `data_in` is the current input sample.
