@@ -40,13 +40,20 @@ The FIR filter uses four coefficients, each equal to `0.25` (scaled by 128 to av
 | `b2`        | `6'b100000`  |
 | `b3`        | `6'b100000`  |
 
-### Formula
 
-The output of the filter is computed as:
+### FIR Filter Output Equation
+
+The output of the FIR filter is calculated as the weighted sum of the current input sample and three delayed input samples:
 
 \[
 \text{data\_out} = (\text{data\_in} \times b_0) + (x_1 \times b_1) + (x_2 \times b_2) + (x_3 \times b_3)
 \]
+
+Where:
+- **data_in**: The current input sample.
+- **x1**, **x2**, **x3**: Delayed versions of the input sample.
+- **b0**, **b1**, **b2**, **b3**: Coefficients (weights) applied to each input sample.
+
 
 
 Where:
