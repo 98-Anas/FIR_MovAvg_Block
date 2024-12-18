@@ -133,7 +133,7 @@ wire [N-1:0] x1, x2, x3;
 // Create delays i.e x[n-1], x[n-2], .. x[n-N]
 // Instantiate D Flip Flops
 DFF DFF0(clk, 0, data_in, x1); // x[n-1]
-DFF DFF1(clk, 0, x1, x2);      // x[x[n-2]]
+DFF DFF1(clk, 0, x1, x2);      // x[n-2]
 DFF DFF2(clk, 0, x2, x3);      // x[n-3] 
 
 //  Multiplication
