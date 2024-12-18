@@ -107,7 +107,8 @@ The `DFF` module is a simple D Flip-Flop with asynchronous reset.
 
 ## Code
 
-timescale 1ns / 1ps
+```verilog
+`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 module FIR_Filter(clk, reset, data_in, data_out);
 
@@ -167,7 +168,7 @@ begin
 end
 
 endmodule
-
+```
 ---
 
 ## Schematic
@@ -182,7 +183,7 @@ endmodule
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   ```
+   
 
 2. Open the Verilog files in a simulator or synthesis tool (e.g., Vivado, ModelSim).
 
